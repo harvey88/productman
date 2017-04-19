@@ -88,9 +88,9 @@ textarea {
 .ba-logo {
 	font-family: Roboto;
 	color: #303030;
-	font-size: 48px; /* Приближение из-за подстановки шрифтов */
+	font-size: 48px;
 	font-weight: 900;
-	line-height: 27px; /* Приближение из-за подстановки шрифтов */
+	line-height: 27px;
 	text-align: left;
 	text-decoration: none;
 	margin-top: 60px;
@@ -135,9 +135,9 @@ textarea {
 .link {
 	font-family: Roboto;
 	color: #e10011;
-	font-size: 24px; /* Приближение из-за подстановки шрифтов */
+	font-size: 24px;
 	font-weight: 700;
-	line-height: 36px; /* Приближение из-за подстановки шрифтов */
+	line-height: 36px;
 	text-align: right;
 	width: 615px;
 
@@ -156,233 +156,183 @@ textarea {
 	border-radius: 5px;
 	background-color:  #ffffff;
 	max-width: 1198px;
-	height: 1193px;
 	margin-left: 92px;
-	margin-top: 845px;
+	padding: 100px 72px;
 }
 .ba-featured_product {
 	font-family: Raleway;
 	color: #303030;
-	font-size: 48px; /* Приближение из-за подстановки шрифтов */
+	font-size: 48px;
 	font-weight: 900;
-	line-height: 150px; /* Приближение из-за подстановки шрифтов */
 	text-align: center;
 	background: url(../img/underline.png) no-repeat 50% 100%;
-/* margin-top: -184px; */
+	padding-bottom: 30px;
+	margin: 0;
 }
 .ba-featured_product-text {
 	font-family: Raleway;
 	color: #303030;
-	font-size: 18px; /* Приближение из-за подстановки шрифтов */
+	font-size: 18px;
 	font-weight: 400;
-	line-height: 24px; /* Приближение из-за подстановки шрифтов */
+	line-height: 24px;
 	text-align: center;
 	max-width: 550px;
 	margin: 0 auto;
-	margin-top: -40px;
-	margin-bottom: 78px;
+	padding-bottom: 78px;
 }
 
-/* SPEAKER */
+/* Main  */
 
-.speaker {
-	margin-left: 72px;
+
+.ba-featured-img {
 	border-radius: 5px;
-	background-color: #eeeeee;
-	width: 692px;
-	height: 387px;
-	background: url("../img/speaker.jpg");
+	position: relative;
+	overflow: hidden;
 }
-.speaker:hover {
-    transition: all 0.4s ease-in-out;
-	background: #E10012;
-	/* transform: translateX(101%); */
+.ba-featured-img img {
+	display: block;
 }
-.speaker h3 {
+.ba-mask {
 	position: absolute;
-	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #E10012;
+	transform: translateX(-100%);
+	transition: all 0.4s ease-in-out;
 }
-.speaker:hover h3{
+.ba-featured-img:hover .ba-mask {
+	transform: translateX(0);
+}
+.ba-featured-img h3{
+	position: absolute;
 	font-family: Roboto;
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: 900;
-	position: relative;
-	display: block;
+	text-align: left;
 	left: 40px;
-    top: 260px;
-    width: 400px;
-    line-height: 35px;
+	bottom: 42px;
+    margin: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
-.speaker:hover h3:after {
+.ba-featured-img h3:after {
     content: '';
     position: absolute;
     width: 90px;
     height: 5px;
     left: 0;
-    bottom: -20px;
+    bottom: 0;
     background-color: #FFF;
 }
 
-.ba-grid > [class*="ba-width-"] {
-    float: left;
-    padding-left: 0px;
+/* Footer */
+
+.ba-footer_title {
+	font-family: Raleway;
+	color: #303030;
+	font-size: 48px;
+	font-weight: 900;
+	text-align: center;
+	margin: 100px 0 0 0;
+	padding: 0;
 }
-	/* Beats */
-.beats {
-	border-radius: 5px;
-	background-color: #eeeeee;
-	width: 328px;
-	height: 387px;
-	margin-left: 35px;
-	background: url("../img/beats.jpg");
+.ba-footer p {
+	font-family: Raleway;
+	color: #303030;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 585px;
+	padding-bottom: 42px;
 }
-.beats:hover {
-    transition: all 0.4s ease-in-out;
-	background: #E10012;
+input {
+	width: 494px;
+	height: 70px;
+	border: none;
+	border-radius: 50px 0 0 50px;
+	margin-bottom: 112px;
+	border: 2px solid #fff;
+	font-family: Raleway;
+	color: #979797;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 24px;
+	text-align: center;
+	background: url(../img/mail.png) no-repeat 25% 50% #fff;
+	margin-left: 308px;
 }
-.beats h3 {
-	position: absolute;
-	display: none;
+input:focus {
+	border: 2px solid #e10011;
+	outline: none;
+	color: #e10011;
 }
-.beats:hover h3{
+button {
+	border-radius: 0 50px 50px 0 ;
+	background-color: #e10011;
+	width: 208px;
+	height: 70px;
+	border: none;
+	outline: none;
+	margin-left: -3px;
+}
+ button .button_title {
 	font-family: Roboto;
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 18px;
 	font-weight: 900;
-	position: relative;
-	display: block;
-	left: 40px;
-    top: 220px;
-    width: 300px;
-    line-height: 35px;
+	text-align: right;
+	text-align: center;
+	text-transform: uppercase;
 }
-.beats:hover h3:after {
-    content: '';
-    position: absolute;
-    width: 90px;
-    height: 5px;
-    left: 0;
-    bottom: -20px;
-    background-color: #FFF;
+.ba-social {
+	margin-bottom: 54px;
+	margin-left: 533px;
 }
-
-	/* casual_shoes */
-
-.casual_shoes {
-	border-radius: 5px;
-	width: 329px;
-	height: 387px;
-	margin-left: 35px;
-	margin-top: 27px;
-	background: url("../img/Casual-Shoes.jpg");
+.ba-social a {
+	display: inline-block;
+	border-radius: 50%;
+	background-color:  #ffffff;
+	width: 70px;
+	height: 70px;
+	margin-left: 20px;
 }
-.casual_shoes:hover {
-    transition: all 0.4s ease-in-out;
-	background: #E10012;
+.ba-link-facebook  {
+	background: url(../img/facebook.png) no-repeat 50% 50% ;
 }
-.casual_shoes h3 {
-	position: absolute;
-	display: none;
+.ba-link-twitter {
+	background: url(../img/twitter.png) no-repeat 50% 50% ;
 }
-.casual_shoes:hover h3{
-	font-family: Roboto;
-	color: #ffffff;
-	font-size: 30px;
-	font-weight: 900;
-	position: relative;
-	display: block;
-	left: 40px;
-    top: 220px;
-    width: 300px;
-    line-height: 35px;
+.ba-link-youtube {
+	background: url(../img/youtube.png) no-repeat 50% 50% ;
 }
-.casual_shoes h3:after {
-    content: '';
-    position: absolute;
-    width: 90px;
-    height: 5px;
-    left: 0;
-    bottom: -20px;
-    background-color: #FFF;
+.ba-social a:hover{
+	background-color: #e10011;
+}
+.ba-footer-copyright {
+	font-family: Raleway;
+	color: #979797;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.ba-footer-company {
+	font-family: Raleway;
+	color: #303030;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
 }
 
-	/* Tumblr */
-
-.tumblr {
-	border-radius: 5px;
-	width: 328px;
-	height: 387px;
-	margin-left: 35px;
-	margin-top: 27px;
-	background: url('../img/tumblr.jpg');
-}
-.tumblr:hover {
-    transition: all 0.4s ease-in-out;
-	background: #E10012;
-}
-.tumblr h3 {
-	position: absolute;
-	display: none;
-}
-.tumblr:hover h3{
-	font-family: Roboto;
-	color: #ffffff;
-	font-size: 30px;
-	font-weight: 900;
-	position: relative;
-	display: block;
-	left: 40px;
-    top: 190px;
-    width: 230px;
-    line-height: 35px;
-}
-.tumblr:hover h3:after {
-    content: '';
-    position: absolute;
-    width: 90px;
-    height: 5px;
-    left: 0;
-    bottom: -20px;
-    background-color: #FFF;
-}
-
-	/* Bracelet  */
-.bracelet {
-	margin-left: 72px;
-	border-radius: 5px;
-	background-color: #eeeeee;
-	width: 328px;
-	height: 387px;
-	margin-top: 27px;
-	background: url("../img/bracelet3.png");
-}
-.bracelet:hover {
-    transition: all 0.4s ease-in-out;
-	background: #E10012;
-}
-.bracelet h3 {
-	position: absolute;
-	display: none;
-}
-.bracelet:hover h3{
-	font-family: Roboto;
-	color: #ffffff;
-	font-size: 30px;
-	font-weight: 900;
-	position: relative;
-	display: block;
-	left: 40px;
-    top: 230px;
-    width: 230px;
-    line-height: 35px;
-}
-.bracelet:hover h3:after {
-    content: '';
-    position: absolute;
-    width: 90px;
-    height: 5px;
-    left: 0;
-    bottom: -20px;
-    background-color: #FFF;
+.ba-footer-company:hover {
+	color: #e10011
 }
