@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,600italic,900);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
 body{
-	max-width: 1500px;
 	background: #F3F3F3;
 	font: 14px/1.5 'Roboto', 'Raleway', sans-serif;
 
@@ -57,9 +56,10 @@ textarea {
 
 /* Layout */
  .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1180px;
+	padding-left: 17px;
+	padding-right: 17px;
+	max-width: 1200px;
+
 }
 .ba-menu {
 	padding: 0;
@@ -73,7 +73,7 @@ textarea {
 	margin-left: 50px;
 }
 .ba-menu a {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	color: #303030;
 	font-size: 18px;
 	font-weight: 400;
@@ -86,7 +86,7 @@ textarea {
 	color: #E00008;
 }
 .ba-logo {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	color: #303030;
 	font-size: 48px;
 	font-weight: 900;
@@ -94,23 +94,22 @@ textarea {
 	text-align: left;
 	text-decoration: none;
 	margin-top: 60px;
-	/* margin-right: 105px; */
 }
 .ba-logo:hover {
 	color: #E00008;
 }
 .ba-header-logo2 {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	color:  #303030;
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 36px;
 	text-align: right;
-	width: 615px;
+	width: 615px; /* size .ba-header-logo2 */
 
 }
 .ba-header-logo1 {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color:  #303030;
 	font-size: 150px;
 	font-weight: 900;
@@ -119,21 +118,17 @@ textarea {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	width: 615px;
+	width: 615px;  /* size .ba-header-logo1 */
 }
 .ba-header-logo {
-	margin-left: 92px;
 	margin-top: 105px;
 }
 .ba-intro {
-	width: 365px;
-	height: 491px;
-	margin-left: 104px;
 	margin-top: 105px;
 
 }
 .link {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	color: #e10011;
 	font-size: 24px;
 	font-weight: 700;
@@ -144,6 +139,7 @@ textarea {
 }
 .link a {
 	text-decoration: none;
+	color: #E10011;
 }
 .link a:visited {
 	color: #E10011;
@@ -155,12 +151,11 @@ textarea {
 	clear: both;
 	border-radius: 5px;
 	background-color:  #ffffff;
-	max-width: 1198px;
-	margin-left: 92px;
+	max-width: 1200px;
 	padding: 100px 72px;
 }
 .ba-featured_product {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #303030;
 	font-size: 48px;
 	font-weight: 900;
@@ -170,7 +165,7 @@ textarea {
 	margin: 0;
 }
 .ba-featured_product-text {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #303030;
 	font-size: 18px;
 	font-weight: 400;
@@ -205,10 +200,11 @@ textarea {
 }
 .ba-featured-img:hover .ba-mask {
 	transform: translateX(0);
+	opacity: 0.8;
 }
 .ba-featured-img h3{
 	position: absolute;
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: 900;
@@ -232,7 +228,7 @@ textarea {
 /* Footer */
 
 .ba-footer_title {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #303030;
 	font-size: 48px;
 	font-weight: 900;
@@ -241,7 +237,7 @@ textarea {
 	padding: 0;
 }
 .ba-footer p {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #303030;
 	font-size: 18px;
 	font-weight: 400;
@@ -258,14 +254,17 @@ input {
 	border-radius: 50px 0 0 50px;
 	margin-bottom: 112px;
 	border: 2px solid #fff;
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #979797;
 	font-size: 18px;
 	font-style: italic;
 	line-height: 24px;
 	text-align: center;
 	background: url(../img/mail.png) no-repeat 25% 50% #fff;
-	margin-left: 308px;
+}
+.forma {
+	max-width: 700px;
+	margin: 0 auto;
 }
 input:focus {
 	border: 2px solid #e10011;
@@ -275,14 +274,14 @@ input:focus {
 button {
 	border-radius: 0 50px 50px 0 ;
 	background-color: #e10011;
-	width: 208px;
+	padding: 0 40px;
 	height: 70px;
 	border: none;
 	outline: none;
 	margin-left: -3px;
 }
- button .button_title {
-	font-family: Roboto;
+ .button_title {
+	font-family: Roboto, sans-serif;
 	color: #ffffff;
 	font-size: 18px;
 	font-weight: 900;
@@ -292,7 +291,7 @@ button {
 }
 .ba-social {
 	margin-bottom: 54px;
-	margin-left: 533px;
+	text-align: center;
 }
 .ba-social a {
 	display: inline-block;
@@ -314,8 +313,15 @@ button {
 .ba-social a:hover{
 	background-color: #e10011;
 }
+.ba-social a:hover:first-child{
+	background-color: #3B5998;
+}
+.ba-social a:hover:nth-child(2){
+	background-color: #41ABE1;
+}
+
 .ba-footer-copyright {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #979797;
 	font-size: 18px;
 	font-weight: 400;
@@ -324,7 +330,7 @@ button {
 	margin-bottom: 30px;
 }
 .ba-footer-company {
-	font-family: Raleway;
+	font-family: Raleway, sans-serif;
 	color: #303030;
 	font-size: 18px;
 	font-weight: 400;
